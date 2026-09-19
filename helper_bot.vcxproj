@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{C2A1F4B5-6D7E-4A8B-9C0D-1E2F3A4B5C6D}</ProjectGuid>
+    <RootNamespace>helperbot</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>helper_bot</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)x64\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)x64\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>src;thirdparty\imgui;thirdparty\imgui\backends;thirdparty\whisper.cpp\include;thirdparty\whisper.cpp\ggml\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;dxgi.lib;dwmapi.lib;windowscodecs.lib;urlmon.lib;winhttp.lib;runtimeobject.lib;d2d1.lib;uiautomationcore.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>src;thirdparty\imgui;thirdparty\imgui\backends;thirdparty\whisper.cpp\include;thirdparty\whisper.cpp\ggml\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;dxgi.lib;dwmapi.lib;windowscodecs.lib;urlmon.lib;winhttp.lib;runtimeobject.lib;d2d1.lib;uiautomationcore.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\gui\gui.cpp" />
+    <ClCompile Include="src\gui\blurbg.cpp" />
+    <ClCompile Include="src\gui\select.cpp" />
+    <ClCompile Include="src\gui\photo.cpp" />
+    <ClCompile Include="src\gui\user.cpp" />
+    <ClCompile Include="src\gui\discord.cpp" />
+    <ClCompile Include="src\gui\brain.cpp" />
+    <ClCompile Include="src\gui\mic.cpp" />
+    <ClCompile Include="src\gui\actions.cpp" />
+    <ClCompile Include="src\gui\stt.cpp" />
+    <ClCompile Include="src\gui\svg.cpp" />
+    <ClCompile Include="src\gui\ears.cpp" />
+    <ClCompile Include="src\gui\config.cpp" />
+    <ClCompile Include="src\gui\adskip.cpp" />
+    <ClCompile Include="src\gui\helpers.cpp" />
+    <ClCompile Include="src\gui\llm.cpp" />
+    <ClCompile Include="src\gui\island.cpp" />
+    <ClCompile Include="src\gui\textfade.cpp" />
+    <ClCompile Include="src\gui\media.cpp">
+      <AdditionalOptions>/await %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>_SILENCE_EXPERIMENTAL_COROUTINE_DEPRECATION_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="thirdparty\imgui\imgui.cpp" />
+    <ClCompile Include="thirdparty\imgui\imgui_demo.cpp" />
+    <ClCompile Include="thirdparty\imgui\imgui_draw.cpp" />
+    <ClCompile Include="thirdparty\imgui\imgui_tables.cpp" />
+    <ClCompile Include="thirdparty\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="thirdparty\imgui\backends\imgui_impl_win32.cpp" />
+    <ClCompile Include="thirdparty\imgui\backends\imgui_impl_dx11.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\gui\gui.h" />
+    <ClInclude Include="src\gui\blurbg.h" />
+    <ClInclude Include="src\gui\select.h" />
+    <ClInclude Include="src\gui\photo.h" />
+    <ClInclude Include="src\gui\user.h" />
+    <ClInclude Include="src\gui\discord.h" />
+    <ClInclude Include="src\gui\brain.h" />
+    <ClInclude Include="src\gui\mic.h" />
+    <ClInclude Include="src\gui\actions.h" />
+    <ClInclude Include="src\gui\stt.h" />
+    <ClInclude Include="src\gui\svg.h" />
+    <ClInclude Include="src\gui\ears.h" />
+    <ClInclude Include="src\gui\config.h" />
+    <ClInclude Include="src\gui\adskip.h" />
+    <ClInclude Include="src\gui\helpers.h" />
+    <ClInclude Include="src\gui\llm.h" />
+    <ClInclude Include="src\gui\island.h" />
+    <ClInclude Include="src\gui\textfade.h" />
+    <ClInclude Include="src\gui\media.h" />
+    <ClInclude Include="src\gui\anim.h" />
+    <ClInclude Include="src\gui\widgets.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+    <None Include="CMakeLists.txt" />
+    <None Include="Icon\fonts\regular.otf" />
+    <None Include="Icon\fonts\medium.otf" />
+    <None Include="Icon\fonts\semi_bold.otf" />
+    <None Include="Icon\fonts\bold.otf" />
+    <None Include="Icon\fonts\light.otf" />
+    <None Include="Icon\fonts\round.otf" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

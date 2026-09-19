@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{A1B2C3D4-E5F6-4A7B-8C9D-0E1F2A3B4C5D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gui">
+      <UniqueIdentifier>{E5F6A7B8-C9D0-4E1F-A2B3-C4D5E6F7A8B9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty">
+      <UniqueIdentifier>{C3D4E5F6-A7B8-4C9D-8E0F-1A2B3C4D5E6F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\imgui">
+      <UniqueIdentifier>{D4E5F6A7-B8C9-4D0E-A1B2-C3D4E5F6A7B8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Icon">
+      <UniqueIdentifier>{F6A7B8C9-D0E1-4F2A-8B3C-C4D5E6F7A8B9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Icon\fonts">
+      <UniqueIdentifier>{A7B8C9D0-E1F2-4A3B-8C4D-D5E6F7A8B9C0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\gui.cpp">
+      <Filter>src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\blurbg.cpp">
+      <Filter>src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\select.cpp">
+      <Filter>src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\photo.cpp">
+      <Filter>src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\user.cpp">
+      <Filter>src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\discord.cpp">
+      <Filter>src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\brain.cpp">
+      <Filter>src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\mic.cpp">
+      <Filter>src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\actions.cpp">
+      <Filter>src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\stt.cpp">
+      <Filter>src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\svg.cpp">
+      <Filter>src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\ears.cpp">
+      <Filter>src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\config.cpp">
+      <Filter>src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\adskip.cpp">
+      <Filter>src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\helpers.cpp">
+      <Filter>src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\llm.cpp">
+      <Filter>src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\island.cpp">
+      <Filter>src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\textfade.cpp">
+      <Filter>src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\media.cpp">
+      <Filter>src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\imgui\imgui.cpp">
+      <Filter>thirdparty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\imgui\imgui_demo.cpp">
+      <Filter>thirdparty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\imgui\imgui_draw.cpp">
+      <Filter>thirdparty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\imgui\imgui_tables.cpp">
+      <Filter>thirdparty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\imgui\imgui_widgets.cpp">
+      <Filter>thirdparty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\imgui\backends\imgui_impl_win32.cpp">
+      <Filter>thirdparty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\imgui\backends\imgui_impl_dx11.cpp">
+      <Filter>thirdparty\imgui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\gui\gui.h">
+      <Filter>src\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\blurbg.h">
+      <Filter>src\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\select.h">
+      <Filter>src\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\photo.h">
+      <Filter>src\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\user.h">
+      <Filter>src\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\discord.h">
+      <Filter>src\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\brain.h">
+      <Filter>src\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\mic.h">
+      <Filter>src\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\actions.h">
+      <Filter>src\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\stt.h">
+      <Filter>src\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\svg.h">
+      <Filter>src\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\ears.h">
+      <Filter>src\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\config.h">
+      <Filter>src\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\adskip.h">
+      <Filter>src\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\helpers.h">
+      <Filter>src\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\llm.h">
+      <Filter>src\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\island.h">
+      <Filter>src\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\textfade.h">
+      <Filter>src\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\media.h">
+      <Filter>src\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\anim.h">
+      <Filter>src\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\widgets.h">
+      <Filter>src\gui</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\fonts\regular.otf">
+      <Filter>Icon\fonts</Filter>
+    </None>
+    <None Include="Icon\fonts\medium.otf">
+      <Filter>Icon\fonts</Filter>
+    </None>
+    <None Include="Icon\fonts\semi_bold.otf">
+      <Filter>Icon\fonts</Filter>
+    </None>
+    <None Include="Icon\fonts\bold.otf">
+      <Filter>Icon\fonts</Filter>
+    </None>
+    <None Include="Icon\fonts\light.otf">
+      <Filter>Icon\fonts</Filter>
+    </None>
+    <None Include="Icon\fonts\round.otf">
+      <Filter>Icon\fonts</Filter>
+    </None>
+  </ItemGroup>
+</Project>
